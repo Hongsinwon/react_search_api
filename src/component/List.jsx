@@ -6,10 +6,15 @@ import { contentValue } from '../value.js';
 
 import { useQuery } from 'react-query';
 import { searchData } from '../api';
+// import { useParams } from 'react-router-dom';
 
 const List = () => {
-  const searchValue = useRecoilValue(contentValue);
+  // 제일 무난하게 사용하는 useParams() 사용
+  // const { keyword } = useParams();
+  // const { isLoading, data } = useQuery('value', () => searchData(useParams));
 
+  // Recoil 사용
+  const searchValue = useRecoilValue(contentValue);
   const { isLoading, data } = useQuery('value', () => searchData(searchValue));
 
   const listConents = () => {

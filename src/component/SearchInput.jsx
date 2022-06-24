@@ -23,26 +23,28 @@ const SearchInput = () => {
   };
 
   // 2. 입력값 atom에 보내기
-  const ValusState = (e) => {
-    e.preventDefault();
+  const ValusState = () => {
     setSearchItem(content);
     history(`/search/${content}`);
   };
 
-  console.log('야');
+  const onEnterKey = (e) => {
+    if (e.key === 'Enter') ValusState();
+  };
 
   return (
     <Wrap>
-      <Form onClick={ValusState}>
+      <Form onSubmit={(e) => e.preventDefault()}>
         <Input
           value={content}
           onChange={(e) => newContentValue(e)}
           placeholder='검색내용을 입력해주세요'
+          onKeyDown={onEnterKey}
         />
         {closeBtn && (
           <ButtonClose onClick={() => setContent('')}>❌</ButtonClose>
         )}
-        <Button>검색</Button>
+        <Button onClick={ValusState}>검색</Button>
       </Form>
     </Wrap>
   );
