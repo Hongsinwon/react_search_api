@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { useNavigate } from 'react-router-dom';
 
-import { useRecoilState, useSetRecoilState } from 'recoil';
+import { useSetRecoilState } from 'recoil';
 import { contentValue } from '../value.js';
 
 const SearchInput = () => {
@@ -28,6 +28,8 @@ const SearchInput = () => {
     setSearchItem(content);
     history(`/search/${content}`);
   };
+
+  console.log('야');
 
   return (
     <Wrap>
