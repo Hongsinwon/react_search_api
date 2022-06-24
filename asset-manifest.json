@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://hongsinwon.github.io/react_search_api/static/css/main.53a5cc2c.css",
-    "main.js": "https://hongsinwon.github.io/react_search_api/static/js/main.b4b6ddc4.js",
+    "main.js": "https://hongsinwon.github.io/react_search_api/static/js/main.b9c84415.js",
     "index.html": "https://hongsinwon.github.io/react_search_api/index.html",
     "main.53a5cc2c.css.map": "https://hongsinwon.github.io/react_search_api/static/css/main.53a5cc2c.css.map",
-    "main.b4b6ddc4.js.map": "https://hongsinwon.github.io/react_search_api/static/js/main.b4b6ddc4.js.map"
+    "main.b9c84415.js.map": "https://hongsinwon.github.io/react_search_api/static/js/main.b9c84415.js.map"
   },
   "entrypoints": [
     "static/css/main.53a5cc2c.css",
-    "static/js/main.b4b6ddc4.js"
+    "static/js/main.b9c84415.js"
   ]
 }
